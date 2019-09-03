@@ -4,6 +4,17 @@ import org.apache.catalina.startup.Tomcat;
 import java.io.File;
 
 public class Main {
+    private String text = "Hello JSON-world";
+
+    //Names MUST match property name for serialization to work!
+    public String getText() {
+        return text;
+    }
+
+    //Names MUST match property name for serialization to work!
+    public void setText(String text) {
+        this.text = text;
+    }
 
     public static void main(String[] args){
 
